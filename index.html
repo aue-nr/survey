@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            body{width:960px;font-size:20px}
+            .button{
+                display: inline-block;
+                margin-bottom: 20px;
+                color: white;
+                padding-left:30px;
+                padding-right: 30px;
+                padding-top: 5px;
+                padding-bottom:5px;
+                font-size: large;
+                background-color:gray;
+                border-top: none;
+                border-right: none;
+                border-bottom: none;
+                border-left: none;
+                border-radius:20px;
+                box-shadow: 0 5px 0 0 rgb(60, 54, 54);
+                text-decoration: none;
+                font-size: 40px;
+            }
+            .button:active{
+                box-shadow: none;
+                transform: translateY(5px);
+            }
+            .first{
+                -webkit-text-decoration:underline orange;
+                text-decoration: underline orange;
+            }
+            .second{
+                -webkit-text-decoration:underline aqua;
+                text-decoration: underline aqua;            
+            }
+            .third{
+                -webkit-text-decoration:underline orange;
+                text-decoration: underline orange;
+            }
+            .fourth{
+                -webkit-text-decoration:underline red;
+                text-decoration:underline red
+            }
+            .arrow{
+                height:40px;
+                width:20px;
+                background-color: red;
+                position: relative;
+                margin-top:10px;
+                margin-bottom: 40px;
+            }
+            .arrow::after{
+                content: '';
+                width:0;
+                height:0;
+                border-style: solid;
+                border-width: 30px 20px 0 20px;
+                border-color: red transparent transparent transparent;
+                position: absolute;
+                top: 90%;
+                left:-50%
+            }
+            .link{
+                font-weight: bolder;
+                font-size: larger;
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+        <h1>【好みと環境についてのアンケート】</h1>
+        <span class="first"><p>ご協力いただき誠にありがとうございます。</p></span>
+        <p>3分ほどで回答できる簡単なアンケートです。<br><span class="third">匿名回答のため、個人が特定されることは決してありません。</span></p>
+        <p><br>
+        <br><span class="link">ここからアクセスできます！</span><br>
+        <div class="arrow"></div>
+        <a href="https://aue-nr.github.io/survey-random/" class="button">アンケート画面</a></p>
+        <p><br><br><br><span class="fourth">※アクセスできない方※<br>お使いのブラウザでJavascriptが有効になっているかご確認ください。</span></p>
+        <p>調査結果やご質問などは<br>お気軽に下記メールアドレスまでご連絡ください。
+            <br>中島：<a href="mailto:20e2265@moon.aichi-u.ac.jp">20e2265@moon.aichi-u.ac.jp</a>
+        </p></center>
+    </body>
+</html>
